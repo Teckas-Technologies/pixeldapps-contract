@@ -1,0 +1,17 @@
+{
+    "name": "near-contract",
+    "version": "1.0.0",
+    "scripts": {
+        "build": "npm run build:release",
+        "build:debug": "npx asb --target debug",
+        "build:release": "npx asb --target release",
+        "deploy": "near dev-deploy ./build/release/main.wasm"
+    },
+    "dependencies": {
+        "near-sdk-as": "0.3.0"
+    },
+    "devDependencies": {
+        "assemblyscript": "^0.18.32",
+        "near-cli": "^3.1.0"
+    }
+}
