@@ -1,17 +1,17 @@
 {
-    "extends": "near-sdk-as/asconfig.json",
-    "targets": {
-      "release": {
-        "outFile": "build/release/main.wasm",
-        "sourceMap": false,
-        "optimize": true,
-        "shrinkLevel": "z",
-        "converge": true
-      },
-      "debug": {
-        "outFile": "build/debug/main.wasm",
-        "sourceMap": true,
-        "debug": true
-      }
+  "extends": "./node_modules/near-sdk-as/asconfig.json",
+  "targets": {
+    "release": {
+      "outFile": "build/release/main.wasm",
+      "sourceMap": false,
+      "optimize": true,
+      "shrinkLevel": "z",
+      "converge": true
+    },
+    "debug": {
+      "outFile": "build/debug/main.wasm",
+      "sourceMap": true,
+      "debug": true
     }
   }
+}
