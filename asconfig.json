@@ -1,17 +1,21 @@
 {
-  "extends": "./node_modules/near-sdk-as/asconfig.json",
+  "extends": "near-sdk-as/asconfig.json",
   "targets": {
-    "release": {
-      "outFile": "build/release/main.wasm",
-      "sourceMap": false,
-      "optimize": true,
-      "shrinkLevel": "z",
-      "converge": true
-    },
     "debug": {
-      "outFile": "build/debug/main.wasm",
-      "sourceMap": true,
-      "debug": true
+      "binaryFile": "build/debug/pixelpets-contract.wasm",
+      "textFile": "build/debug/pixelpets-contract.wat"
+    },
+    "release": {
+      "binaryFile": "build/release/pixelpets-contract.wasm",
+      "textFile": "build/release/pixelpets-contract.wat",
+      "sourceMap": false,
+      "optimizeLevel": 3,
+      "shrinkLevel": 1,
+      "converge": true
     }
+  },
+  "options": {
+    "compact": true,
+    "exportRuntime": false
   }
 }
