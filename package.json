@@ -16,10 +16,6 @@
   },
   "devDependencies": {
     "assemblyscript": "^0.19.23",
-    "near-sdk-as": "^3.0.0",
-    "near-sdk-bindgen": "^3.0.0",
-    "visitor-as": "^0.5.0",
-    "near-sdk-core": "^3.0.0"
-    
+    "near-sdk-as": "^3.2.3"
   }
 }
